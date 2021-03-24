@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功</title>
+</head>
+<body>
+    <h1>个人页面</h1>
+    weiBoId：<span th:text="${user.getWeiBoUid()}"></span><br>
+    过期时间：<span th:text="${user.getExpiresIn()}"></span><br>
+    微博昵称：<span th:text="${user.getNickname()}"></span><br>
+    头像：
+    <img th:src="${user.getAvatar()}" alt="" style="width: 100px;height: 100px;">
+</body>
+</html>
